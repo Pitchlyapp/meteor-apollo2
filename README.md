@@ -202,8 +202,8 @@ query {
 }
 ```
 
-## Who We Are
-My name is Michael and I'm a Senior Product Engineer at [Pitchly](https://pitchly.net/). We make it easy to manage and find information instantly across your entire organization and export that information into a variety of visual formats.
+## About Pitchly
+My name is Michael and I'm a Senior Product Engineer at [Pitchly](https://pitchly.net/). We make it easy to manage and find information instantly across your entire organization and export that information into a variety of visual formats. Meteor, GraphQL, and Apollo are a large part of what we use. We're also from Des Moines, Iowa. Sure it snows here, but we also have some pretty awesome corn!
 
 If you have any questions about this example or if you have a passion for GraphQL or Meteor, [get a hold of us](mailto:jobs@pitchly.net). **We're hiring!**
 
