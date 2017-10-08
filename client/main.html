@@ -1,0 +1,50 @@
+<head>
+  <title>meteor-apollo2</title>
+</head>
+
+<body>
+  
+  <div class="page-container">
+    
+    <h1>Apollo 2.0 + subscriptions</h1>
+    <h2>(with Meteor frontend)</h2>
+    
+    <p class="highlight">Open this page in two windows to see subscriptions update across clients</p>
+    
+    <p>Current database value for this user<br>(Will update reactively via <b>Apollo subscribe</b>)</p>
+    
+    <div class="result">
+      <div class="field">
+        <div class="label">ID</div><div class="value">{{person.id}}</div>
+      </div>
+      <div class="field">
+        <div class="label">Name</div><div class="value">{{person.name}}</div>
+      </div>
+      <div class="field">
+        <div class="label">Eye Color</div><div class="value">{{person.eyeColor}}</div>
+      </div>
+      <div class="field">
+        <div class="label">Occupation</div><div class="value">{{person.occupation}}</div>
+      </div>
+    </div>
+    
+    <p>Use the form to update values for this user<br>(Updates using <b>GraphQL mutation</b>)</p>
+    
+    <form>
+      <div class="field">
+        <div class="label">Name</div><div class="value"><input type="text" name="name" value="{{person.name}}" autocomplete="off"></div>
+      </div>
+      <div class="field">
+        <div class="label">Eye Color</div><div class="value"><input type="text" name="eyeColor" value="{{person.eyeColor}}" autocomplete="off"><div class="note">Will only accept: brown, blue, green, hazel</div></div>
+      </div>
+      <div class="field">
+        <div class="label">Occupation</div><div class="value"><input type="text" name="occupation" value="{{person.occupation}}" autocomplete="off"></div>
+      </div>
+      <div class="field submit">
+        <div class="label"></div><div class="value"><button type="submit">Update</button></div>
+      </div>
+    </form>
+    
+  </div>
+  
+</body>

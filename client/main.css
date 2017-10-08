@@ -1,0 +1,148 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+	font-size: 16px;
+	color: #303030;
+	text-align: left;
+	line-height: 1.5;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 20px 0px 5px 0px;
+  padding: 0px;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+  color: #607d8b;
+  font-style: italic;
+  margin: 0px 0px 30px 0px;
+  padding: 0px;
+}
+
+p {
+  font-size: 14px;
+  text-align: center;
+  margin: 50px 0px 15px 0px;
+  padding: 0px;
+}
+
+form {
+  margin: 0px;
+  padding: 0px;
+}
+
+input[type="text"] {
+  margin: 0px;
+  padding: 8px;
+  width: 200px;
+  border: 2px solid #CCCCCC;
+  outline: none;
+  border-radius: 3px;
+  font-family: sans-serif;
+}
+
+input[type="text"]:hover {
+  border-color: #909090;
+}
+
+input[type="text"]:focus {
+  border-color: #2196f3;
+}
+
+button {
+  margin: 0px;
+  padding: 12px 15px 12px 15px;
+  background-color: #2196f3;
+  border: 0px;
+  color: white;
+  border-radius: 3px;
+  font-weight: bold;
+  font-family: sans-serif;
+  outline: none;
+  font-size: 14px;
+	cursor: pointer;
+	cursor: hand;
+}
+
+button:hover {
+  background-color: #1D88DE;
+}
+
+.highlight {
+  background-color: #f7f4ff;
+  padding: 10px;
+  width: 300px;
+  margin: 0px auto 0px auto;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.page-container {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.page-container .field {
+  border-bottom: 1px solid #CCCCCC;
+  padding: 10px;
+}
+
+.page-container .field .label {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  text-align: right;
+  padding-right: 10px;
+  font-weight: bold;
+  color: #607d8b;
+}
+
+.page-container .field .value {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  padding-left: 10px;
+}
+
+.page-container form {
+  margin-bottom: 50px;
+}
+
+.page-container form .field {
+  border-bottom: 0px;
+}
+
+.page-container form .field .label {
+  font-size: 14px;
+  font-weight: normal;
+  width: 40%;
+  padding-right: 5px;
+  padding-top: 7px;
+}
+
+.page-container form .field .value {
+  width: 60%;
+}
+
+.page-container form .field .value .note {
+  font-size: 11px;
+  margin-top: 5px;
+  color: gray;
+}

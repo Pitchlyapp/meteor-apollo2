@@ -1,0 +1,8 @@
+mutation updatePerson($id: ID!, $name: String!, $eyeColor: EyeColor!, $occupation: String!) {
+  updatePerson(id: $id, name: $name, eyeColor: $eyeColor, occupation: $occupation) {
+    id
+    name
+    eyeColor
+    occupation
+  }
+}

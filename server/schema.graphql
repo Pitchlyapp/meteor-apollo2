@@ -1,0 +1,31 @@
+enum EyeColor {
+  brown
+  blue
+  green
+  hazel
+}
+
+type Person {
+  id: ID
+  name: String
+  eyeColor: EyeColor
+  occupation: String
+}
+
+type Query {
+  person(id: ID!): Person
+}
+
+type Mutation {
+  updatePerson(id: ID!, name: String!, eyeColor: EyeColor!, occupation: String!): Person
+}
+
+type Subscription {
+	personUpdated(id: ID!): Person
+}
+
+schema {
+	query: Query
+	mutation: Mutation
+	subscription: Subscription
+}

@@ -1,0 +1,8 @@
+subscription personUpdated($id: ID!) {
+  personUpdated(id: $id) {
+    id
+    name
+    eyeColor
+    occupation
+  }
+}

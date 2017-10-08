@@ -1,0 +1,8 @@
+query person($id: ID!) {
+  person(id: $id) {
+    id
+    name
+    eyeColor
+    occupation
+  }
+}
