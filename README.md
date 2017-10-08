@@ -21,6 +21,8 @@ meteor
 
 Open up http://localhost:3000/ and see the result.
 
+![meteor-apollo2 screenshot](https://raw.githubusercontent.com/Pitchlyapp/meteor-apollo2/master/imgs/meteor-apollo2.png)
+
 When you update the values on the bottom, the changes should reflect immediately up above. If you open the page in two separate windows, changes in one window should push up to all windows as well, right away. This is GraphQL subscriptions at work using the new extensible **ApolloLink** interface in Apollo 2.0.
 
 ## Dependencies
@@ -190,5 +192,7 @@ Something that is important to understand with GraphQL publish and subscribe is 
 My name is Michael and I'm a Senior Product Engineer at [Pitchly](https://pitchly.net/). We make it easy to manage and find information instantly across your entire organization and export that information into a variety of visual formats.
 
 If you have any questions about this example or if you have a passion for GraphQL or Meteor, [get a hold of us](mailto:jobs@pitchly.net). **We're hiring!**
+
+![Pitchly](https://raw.githubusercontent.com/Pitchlyapp/meteor-apollo2/master/imgs/logo.png)
 
 [Website](https://pitchly.net/) - [Twitter](https://twitter.com/pitchlyinc) - [LinkedIn](https://www.linkedin.com/company/pitchly)
