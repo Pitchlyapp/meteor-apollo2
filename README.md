@@ -202,10 +202,22 @@ query {
 }
 ```
 
+## Links & Thanks
+
+Associated Medium article to this subject can be found [here](https://medium.com/@michaelcbrook/how-to-get-apollo-2-0-working-with-graphql-subscriptions-321388be030c)
+
+Thanks to [@mistic](https://github.com/apollographql/subscriptions-transport-ws/issues/275#issuecomment-330294921) for helping me make sense of ApolloLink.split
+
+Thanks to [@graph1994](https://github.com/howtographql/howtographql/issues/226#issuecomment-332053738) for helping me understand how to pass authTokens
+
+Thanks to [@DxCx](https://github.com/apollographql/subscriptions-transport-ws/issues/275#issuecomment-333397566) for helping me understand my versions were f***ed up
+
+Thanks to my mom for having bred me and the brave men and women who risk their lives for great software [#nocolonstillrolling](https://twitter.com/hashtag/nocolonstillrolling)
+
 ## About Pitchly
 My name is Michael and I'm a Senior Product Engineer at [Pitchly](https://pitchly.net/). We make it easy to manage and find information instantly across your entire organization and export that information into a variety of visual formats. Meteor, GraphQL, and Apollo are a large part of what we use. We're also from Des Moines, Iowa. Sure it snows here, but we also have some pretty awesome corn!
 
-If you have any questions about this example or if you have a passion for GraphQL or Meteor, [get a hold of us](mailto:jobs@pitchly.net). **We're hiring!**
+If you have any questions about this example or if you have a passion for GraphQL or Meteor, [get a hold of us](mailto:info@pitchly.net). **We're hiring!**
 
 ![Pitchly](https://raw.githubusercontent.com/Pitchlyapp/meteor-apollo2/master/imgs/logo.png)
 
