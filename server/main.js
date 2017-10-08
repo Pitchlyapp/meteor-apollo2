@@ -32,7 +32,7 @@ new SubscriptionServer({
   execute,
   subscribe,
   // // on connect subscription lifecycle event
-  // onConnected: async (connectionParams, webSocket) => {
+  // onConnect: async (connectionParams, webSocket) => {
   //   // if a meteor login token is passed to the connection params from the client, 
   //   // add the current user to the subscription context
   //   const subscriptionContext = connectionParams.authToken

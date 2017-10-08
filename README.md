@@ -120,7 +120,7 @@ new SubscriptionServer({
   execute,
   subscribe,
   // // on connect subscription lifecycle event
-  // onConnected: async (connectionParams, webSocket) => {
+  // onConnect: async (connectionParams, webSocket) => {
   //   // if a meteor login token is passed to the connection params from the client, 
   //   // add the current user to the subscription context
   //   const subscriptionContext = connectionParams.authToken
@@ -187,6 +187,20 @@ export default resolvers;
 
 #### Note
 Something that is important to understand with GraphQL publish and subscribe is that you must manually **publish** every time a change was made on the server. That is how updates are pushed to the client immediately. (Meteor folks may not be used to this, since they've always gotten this for free.) This example will work if you are only making changes to your data through GraphQL mutations, but if you have changes coming in from elsewhere as well, you'll want to call `pubsub.publish("exampleSub", { exampleSub: data });` wherever those changes are made, where `exampleSub` is the name of your subscription and `data` is your complete object for that entity as it adheres to your GraphQL schema (in this case, it is all data belonging to that **Person**).
+
+## GraphiQL
+Lest we forget, we also have GraphiQL at our disposal for query testing. If you open up your browser to http://localhost:3000/graphiql you can inspect your schema more easily. Try running queries like the one below.
+
+```graphql
+query {
+  person(id: "userid1") {
+    id
+    name
+    eyeColor
+    occupation
+  }
+}
+```
 
 ## Who We Are
 My name is Michael and I'm a Senior Product Engineer at [Pitchly](https://pitchly.net/). We make it easy to manage and find information instantly across your entire organization and export that information into a variety of visual formats.
