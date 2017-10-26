@@ -50,8 +50,8 @@ The client now looks something like this:
 import { ApolloClient } from 'apollo-client';
 import { ApolloLink } from 'apollo-link';
 import { HttpLink } from 'apollo-link-http';
-import WebSocketLink from 'apollo-link-ws';
-import Cache from 'apollo-cache-inmemory';
+import { WebSocketLink } from 'apollo-link-ws';
+import { InMemoryCache } from 'apollo-cache-inmemory';
 import { getOperationAST } from 'graphql';
 
 const httpUri = 'http://localhost:3000/graphql';
@@ -75,7 +75,7 @@ const link = ApolloLink.split(
   new HttpLink({ uri: httpUri })
 );
 
-const cache = new Cache(window.__APOLLO_STATE);
+const cache = new InMemoryCache(window.__APOLLO_STATE__);
 
 const client = new ApolloClient({
   link,
