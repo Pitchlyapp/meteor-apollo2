@@ -3,7 +3,7 @@ import { ApolloClient } from 'apollo-client';
 import { ApolloLink } from 'apollo-link';
 import { HttpLink } from 'apollo-link-http';
 import WebSocketLink from 'apollo-link-ws';
-import Cache from 'apollo-cache-inmemory';
+import { InMemoryCache } from 'apollo-cache-inmemory';
 import { getOperationAST } from 'graphql';
 import { setup } from 'meteor/swydo:blaze-apollo'; // Connects Apollo to Meteor's Blaze UI framework, but you can use React or Vue instead
 
@@ -42,7 +42,7 @@ const link = ApolloLink.split(
   new HttpLink({ uri: httpUri })
 );
 
-const cache = new Cache(window.__APOLLO_STATE);
+const cache = new InMemoryCache(window.__APOLLO_STATE);
 
 const client = new ApolloClient({
   link,
